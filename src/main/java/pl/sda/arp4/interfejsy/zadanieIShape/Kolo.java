@@ -1,18 +1,18 @@
-package pl.sda.arp4.inheritance.ksztalty;
+package pl.sda.arp4.interfejsy.zadanieIShape;
 
-public class Kolo extends Ksztalt{
+public class Kolo implements IShape {
     private double promien;
 
     public Kolo(double promien) {
         this.promien = promien;
     }
 
-    public double obliczPole(){
+    public double obliczPole() {
         return Math.PI * promien * promien;
     }
 
     @Override
     public double obliczObwod() {
-        return  2*Math.PI * promien;
+        return 2 * Math.PI * promien;
     }
 }
